@@ -1,11 +1,11 @@
 import functions
 
-ticker_symbol = "IBM"
+ticker_symbol = "LMT"
 functions.init_data(ticker_symbol)
 
-n = 9   # Wieviel Jahre sollen Betrachtet werden (Bsp.: n = 9 die letzten 10 Werte)
-prediction_y = 3   # Wieivel Jahre wir in die Zukunft schauen wollen
-g = 0.02 # Langfristige Inflation + stabiles Wachstum (Muss selber festgelegt werden)
+n = 5   # Wieviel Jahre sollen Betrachtet werden (Bsp.: n = 9 die letzten 10 Werte)
+prediction_y = 5   # Wieivel Jahre wir in die Zukunft schauen wollen
+g = 0.03 # Langfristige Inflation + stabiles Wachstum (Muss selber festgelegt werden)
 r_m = 0.08 # Erwartete Marktrendite (Muss selber geschätzt werden)
 t = 0.21 # Steuersatz T (aktuell für US Unternehmen) könnte auch berechnet werden ist aber oft besser anzunhemen
 
@@ -30,8 +30,8 @@ current_stock_price = functions.current_stock_price
 currency = functions.currency
 
 if stock_price > current_stock_price:
-    print(f"The share is undervalued and should be worth {stock_price} {currency} in {prediction_y} years.")
+    print(f"The share is undervalued and should be worth {stock_price} {currency}.")
 elif stock_price < current_stock_price:
-    print(f"The share is overvalued and should be worth {stock_price} {currency} in {prediction_y} years.")
+    print(f"The share is overvalued and should be worth {stock_price} {currency}.")
 else:
     print("The share is fairly valued.")
