@@ -2,7 +2,13 @@
 
 Currently in development. Python app that uses API data to display and analyze historical stock prices.
 
-Status: Core logic and API integration in progress.
+ # To Do
+
+- Add clear instructions and requirements for setup (installation guide, `requirements.txt`)
+- Improve DCF calculation logic (assumptions, model structure, valuation accuracy)
+- Increase robustness against invalid input and API failures
+- Integrate additional valuation methods (e.g. multiples, dividend discount model)
+- Consider building a proper UI (e.g. command line interface, web interface)
 
 # Update 3 (30.07.2025): 
 
